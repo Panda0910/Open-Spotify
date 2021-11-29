@@ -1,0 +1,72 @@
+/* s ===== TYPOGRAPHY CSS ===== s */
+.text-96 {
+  font-size: var(--fs-800);
+  line-height: 158%; /* or 151.488px */
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.text-48 {
+  font-size: var(--fs-700);
+  line-height: 158%; /* or 75.744px */
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.text-24-700 {
+  font-size: var(--fs-600);
+  font-weight: 700;
+  line-height: 117%; /* or 28px - 2.8rem */
+  letter-spacing: -0.04em;
+}
+
+.text-24-600 {
+  font-size: var(--fs-600);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1.3em;
+}
+
+.text-18 {
+  font-size: var(--fs-500);
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 133%; /* or 24px - 2.4rem */
+}
+
+.text-16 {
+  font-size: var(--fs-400);
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 150%; /* or 24px - 2.4rem */
+}
+
+.text-14-400,
+.text-14-700 {
+  font-size: var(--fs-300);
+  letter-spacing: normal;
+  line-height: 114%; /* or 16px - 1.6rem */
+}
+
+.text-14-400 {
+  font-weight: 400;
+}
+
+.text-14-700 {
+  font-weight: 700;
+}
+
+.text-12 {
+  font-size: var(--fs-200);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 133%; /* or 16px - 1.6rem */
+}
+
+.text-11 {
+  font-size: var(--fs-100);
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 145.45%; /* or 16px - 1.6rem */
+}
+/* e ===== TYPOGRAPHY CSS ===== e */
