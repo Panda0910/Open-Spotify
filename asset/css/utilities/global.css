@@ -99,6 +99,10 @@
   padding-block: 1.6rem;
 }
 
+.p-16-32 {
+  padding: 1.6rem 3.2rem;
+}
+
 .p-8 {
   padding: 0.8rem;
 }
@@ -125,6 +129,34 @@
 
 .py-4 {
   padding-block: 0.4rem;
+}
+
+/* ===== Flex classes ===== */
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/* ====== use for utilities classes ====== */
+.grid {
+  display: grid;
+}
+
+.h-underline:hover {
+  text-decoration: underline;
 }
 
 /* ====== use for responsive ====== */

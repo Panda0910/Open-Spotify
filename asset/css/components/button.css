@@ -1,0 +1,28 @@
+.btn {
+  display: inline-block;
+  padding: 0.8rem 3.4rem;
+  font-size: var(--fs-200);
+  font-weight: 700;
+  letter-spacing: 1.76px;
+  line-height: 150%; /* 18px - 1.8rem */
+  text-transform: uppercase;
+  color: var(--white);
+  transition: transform 0.1s ease-in;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn-signin {
+  background-color: var(--white);
+  color: var(--black-800);
+  border-radius: 100vw;
+}
+
+.hamburger {
+  cursor: pointer;
+  font-size: var(--fs-600);
+  color: var(--white);
+}

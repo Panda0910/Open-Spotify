@@ -1,0 +1,55 @@
+.box {
+  --radius: 1rem;
+  border-radius: var(--radius);
+  background-color: var(--bg-music-box);
+  transition: background-color 0.3s ease-in;
+}
+
+.box:hover {
+  background-color: var(--bg-box-hover);
+}
+
+.box-head {
+  width: 100%;
+  aspect-ratio: 1;
+  position: relative;
+}
+
+.box-play {
+  background-color: var(--green);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  position: absolute;
+  right: 0.8rem;
+  bottom: 1.2rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.box:hover .box-play {
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.box-play:hover {
+  transform: scale(1.1);
+}
+
+.box-title {
+  --line: 1;
+}
+.box-desc {
+  --line: 2;
+}
+
+.box-title,
+.box-desc {
+  -webkit-line-clamp: var(--line);
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

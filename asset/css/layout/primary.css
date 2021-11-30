@@ -1,0 +1,30 @@
+.primary {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.primary-main {
+  background-color: var(--bg-m-home);
+}
+
+.primary-grid {
+  --gap: 1.2rem;
+  --column: 2;
+  grid-template-columns: repeat(var(--column), 1fr);
+  gap: var(--gap);
+}
+
+@media (min-width: 50em) {
+  .primary-grid {
+    --gap: 2.4rem;
+    --column: 3;
+  }
+}
+
+@media (min-width: 70em) {
+  .primary-grid {
+    --column: 5;
+  }
+}

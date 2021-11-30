@@ -22,4 +22,15 @@ img {
   object-fit: cover;
 }
 
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+button,
+input {
+  outline: none;
+  border: none;
+}
+
 /* e ===== BASE CSS ===== e */
