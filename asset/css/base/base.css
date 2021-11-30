@@ -33,4 +33,8 @@ input {
   border: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* e ===== BASE CSS ===== e */
