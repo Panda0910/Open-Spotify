@@ -1,0 +1,32 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg-h-home);
+  z-index: 1000;
+}
+
+.header-container {
+  width: 100%;
+}
+
+.header-icon {
+  font-size: var(--fs-500);
+  line-height: 114%;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+}
+
+.arrow ion-icon {
+  cursor: not-allowed;
+}
