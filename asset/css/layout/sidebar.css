@@ -5,10 +5,10 @@
   width: 40vw;
   height: 100vh;
   transform: translateX(-100%);
-  transition: transform 0.4s ease-in;
   padding-bottom: 20vh;
   background-color: var(--black);
   z-index: 10000;
+  transition: transform 0.4s ease-in !important;
 }
 
 .sidebar.open {
@@ -21,7 +21,7 @@
     min-width: 18rem;
     width: 21rem;
     transform: translateX(0%);
-    transition: none;
+    transition: none !important;
     flex-shrink: 0;
   }
 }
