@@ -1,0 +1,31 @@
+.dropdown {
+  position: relative;
+}
+
+.dropdown-list {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  background-color: var(--bg-user-hover);
+  color: var(--white);
+  border-radius: 4px;
+  padding: 0.4rem;
+  width: max-content;
+  min-width: 160px;
+  display: none;
+  z-index: 1000;
+}
+
+.dropdown.active .dropdown-list {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 1.2rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}

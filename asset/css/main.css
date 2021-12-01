@@ -10,6 +10,7 @@
 /* ==== components folder ==== */
 @import "components/button.css";
 @import "components/box.css";
+@import "components/dropdown.css";
 
 /* ==== layout folder ==== */
 @import "layout/main.css";

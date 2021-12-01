@@ -8,11 +8,11 @@
     <!-- * ========== set up logo in website ==========  * -->
     <link
       rel="shortcut icon"
-      href="./asset/img/logo/spotify.svg"
+      href="../asset/img/logo/spotify.svg"
       type="image/x-icon"
     />
     <!-- * ========== custom css ========== * -->
-    <link rel="stylesheet" href="./asset/css/main.css" />
+    <link rel="stylesheet" href="../asset/css/main.css" />
   </head>
   <body>
     <!-- s ========== MAIN ========== s -->
@@ -23,7 +23,7 @@
           <!-- s ====== SIDEBAR BRAND ====== s -->
           <header class="sidebar-brand p-24">
             <!-- s ==== SIDEBAR LOGO ==== s -->
-            <a href="./index.html" class="sidebar-logo">
+            <a href="./home-user.html" class="sidebar-logo">
               <svg
                 width="131"
                 height="40"
@@ -42,7 +42,7 @@
           <!-- s ====== SIDEBAR MENU ====== s -->
           <ul class="sidebar-menu">
             <li class="sidebar-item p-8-16 active">
-              <a href="./index.html" class="sidebar-link text-grey">
+              <a href="./home-user.html" class="sidebar-link text-grey">
                 <span class="sidebar-icon">
                   <ion-icon name="home"></ion-icon>
                 </span>
@@ -50,7 +50,7 @@
               </a>
             </li>
             <li class="sidebar-item p-8-16">
-              <a href="./page/search-guest.html" class="sidebar-link text-grey">
+              <a href="./search-user.html" class="sidebar-link text-grey">
                 <span class="sidebar-icon">
                   <ion-icon name="search"></ion-icon>
                 </span>
@@ -132,8 +132,34 @@
 
             <!-- s ==== HEADER BTN ==== s -->
             <div class="header-btn">
-              <a class="btn" href="#!">đăng ký</a>
-              <a class="btn btn-signin" href="#!">đăng nhập</a>
+              <a class="btn btn-update" href="#!">nâng cấp</a>
+              <div class="dropdown">
+                <button class="user flex">
+                  <img src="../asset/img/user/user.jpg" class="user-img" />
+                  <span class="user-name text-14-700 text-capitalize">
+                    user 01
+                  </span>
+                  <ion-icon name="caret-down-outline"></ion-icon>
+                </button>
+                <ul class="dropdown-list">
+                  <li class="dropdown-item">
+                    <a href="#!" class="text-14-400 dropdown-link">Tài khoản</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#!" class="text-14-400 dropdown-link">Hồ sơ</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#!" class="text-14-400 dropdown-link">
+                      Nâng cấp lên Premium
+                    </a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="../index.html" class="text-14-400 dropdown-link">
+                      Đăng xuất
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
             <!-- e ==== HEADER BTN ==== e -->
           </header>
@@ -164,8 +190,8 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <!-- ========== use global js ========== -->
-    <script src="./asset/js/app.js"></script>
+    <script src="../asset/js/app.js"></script>
     <!-- ========== use custom js ========== -->
-    <script src="./asset/js/home.js"></script>
+    <script src="../asset/js/home-user.js"></script>
   </body>
 </html>

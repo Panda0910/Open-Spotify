@@ -19,3 +19,11 @@ window.addEventListener("mousedown", function (event) {
     box.classList.remove("open");
   }
 });
+
+// open dropdown
+const userBtn = document.querySelector(".user");
+
+userBtn.addEventListener("click", () => {
+  userBtn.classList.toggle("active");
+  document.querySelector(".dropdown").classList.toggle("active");
+});
