@@ -8,11 +8,11 @@
     <!-- * ========== set up logo in website ==========  * -->
     <link
       rel="shortcut icon"
-      href="./asset/img/logo/spotify.svg"
+      href="../asset/img/logo/spotify.svg"
       type="image/x-icon"
     />
     <!-- * ========== custom css ========== * -->
-    <link rel="stylesheet" href="./asset/css/main.css" />
+    <link rel="stylesheet" href="../asset/css/main.css" />
   </head>
   <body>
     <!-- s ========== MAIN ========== s -->
@@ -23,7 +23,7 @@
           <!-- s ====== SIDEBAR BRAND ====== s -->
           <header class="sidebar-brand p-24">
             <!-- s ==== SIDEBAR LOGO ==== s -->
-            <a href="./index.html" class="sidebar-logo">
+            <a href="../index.html" class="sidebar-logo">
               <svg
                 width="131"
                 height="40"
@@ -41,16 +41,16 @@
 
           <!-- s ====== SIDEBAR MENU ====== s -->
           <ul class="sidebar-menu">
-            <li class="sidebar-item p-8-16 active">
-              <a href="./index.html" class="sidebar-link text-grey">
+            <li class="sidebar-item p-8-16">
+              <a href="../index.html" class="sidebar-link text-grey">
                 <span class="sidebar-icon">
                   <ion-icon name="home"></ion-icon>
                 </span>
                 <span class="text-14-700">Trang chủ</span>
               </a>
             </li>
-            <li class="sidebar-item p-8-16">
-              <a href="./page/search-guest.html" class="sidebar-link text-grey">
+            <li class="sidebar-item p-8-16 active">
+              <a href="./search-guest.html" class="sidebar-link text-grey">
                 <span class="sidebar-icon">
                   <ion-icon name="search"></ion-icon>
                 </span>
@@ -140,12 +140,31 @@
           <!-- e ====== PRIMARY HEADER ====== e -->
 
           <!-- s ====== PRIMARY MAIN ====== s -->
-          <div class="primary-main p-24-32">
-            <!-- s ==== HOME ==== s -->
-            <section class="home">
-              <!-- ? == DO SOMETHING WITH JS DOM == -->
+          <div
+            class="primary-main p-24-32 text-white"
+            style="min-height: 200vh"
+          >
+            <section class="search">
+              <form class="search-form">
+                <label class="search-icon" for="search">
+                  <ion-icon name="search"></ion-icon>
+                </label>
+                <input
+                  type="text"
+                  id="search"
+                  class="search-input"
+                  placeholder="Nghệ sĩ, bài hát hoặc podcast"
+                />
+              </form>
+              <div class="search-content py-32">
+                <div class="search-content_header">
+                  <h4 class="text-24-700">Duyệt tìm tất cả</h4>
+                </div>
+                <div class="search-content_list grid primary-grid py-32">
+                  <!-- ? ==== DO SOMETHING WITH JS DOM ==== -->
+                </div>
+              </div>
             </section>
-            <!-- e ==== HOME ==== e -->
           </div>
           <!-- e ====== PRIMARY MAIN ====== e -->
         </div>
@@ -163,9 +182,9 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <!-- ========== use global js ========== -->
-    <script src="./asset/js/app.js"></script>
-    <!-- ========== use custom js ========== -->
-    <script src="./asset/js/home.js"></script>
+    <!-- ========== use global js ==========  -->
+    <script src="../asset/js/app.js"></script>
+    <!-- ========== use custom js ==========  -->
+    <script src="../asset/js/search.js"></script>
   </body>
 </html>

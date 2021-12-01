@@ -263,7 +263,7 @@ const homeSection = document.querySelector(".home");
 
 homeData.forEach((content) => {
   const homeContent = document.createElement("div");
-  homeContent.classList.add("mb-32");
+  homeContent.classList.add("home-content", "mb-32");
 
   const mb4 = content.contentDesc.length > 0 ? "mb-4" : "";
 

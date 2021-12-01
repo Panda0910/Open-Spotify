@@ -71,6 +71,18 @@
 }
 
 /* ===== Padding classes ===== */
+.p-32 {
+  padding: 3.2rem;
+}
+
+.px-32 {
+  padding-inline: 3.2rem;
+}
+
+.py-32 {
+  padding-block: 3.2rem;
+}
+
 .p-24 {
   padding: 2.4rem;
 }
