@@ -49,7 +49,7 @@
                 <span class="text-14-700">Trang chủ</span>
               </a>
             </li>
-            <li class="sidebar-item p-8-16 active">
+            <li class="sidebar-item p-8-16">
               <a href="./search-user.html" class="sidebar-link text-grey">
                 <span class="sidebar-icon">
                   <ion-icon name="search"></ion-icon>
@@ -57,7 +57,7 @@
                 <span class="text-14-700">Tìm kiếm</span>
               </a>
             </li>
-            <li class="sidebar-item p-8-16">
+            <li class="sidebar-item p-8-16 active">
               <a href="./library.html" class="sidebar-link text-grey">
                 <span class="sidebar-icon">
                   <ion-icon name="library"></ion-icon>
@@ -172,26 +172,32 @@
 
           <!-- s ====== PRIMARY MAIN ====== s -->
           <div class="primary-main p-24-32 text-white">
-            <section class="search">
-              <form class="search-form">
-                <label class="search-icon" for="search">
-                  <ion-icon name="search"></ion-icon>
-                </label>
-                <input
-                  type="text"
-                  id="search"
-                  class="search-input"
-                  placeholder="Nghệ sĩ, bài hát hoặc podcast"
-                />
-              </form>
-              <div class="search-content py-32">
-                <div class="search-content_header">
-                  <h4 class="text-24-700">Duyệt tìm tất cả</h4>
-                </div>
-                <div class="search-content_list grid primary-grid py-32">
-                  <!-- ? ==== DO SOMETHING WITH JS DOM ==== -->
-                </div>
+            <section class="library">
+              <!-- s ==== LIBRARY TYPE ==== s -->
+              <header class="library-type">
+                <ul class="library-menu flex flex-center">
+                  <li class="library-item text-16 active" data-type="playlist">
+                    Playlist
+                  </li>
+                  <li class="library-item text-16" data-type="podcast">
+                    Podcast
+                  </li>
+                  <li class="library-item text-16" data-type="singer">
+                    Nghệ sĩ
+                  </li>
+                  <li class="library-item text-16" data-type="album">Album</li>
+                </ul>
+              </header>
+              <!-- e ==== LIBRARY TYPE ==== e -->
+
+              <!-- s ==== LIBRARY CONTENT  ==== s -->
+              <div class="library-content">
+                <div class="library-icon mb-32"></div>
+                <h6 class="library-heading text-32 mb-16"></h6>
+                <p class="library-desc text-16-400 mb-16"></p>
+                <a class="library-btn btn btn-signin"></a>
               </div>
+              <!-- e ==== LIBRARY CONTENT  ==== e -->
             </section>
           </div>
           <!-- e ====== PRIMARY MAIN ====== e -->
@@ -213,6 +219,6 @@
     <!-- ========== use global js ==========  -->
     <script src="../asset/js/app.js"></script>
     <!-- ========== use custom js ==========  -->
-    <script src="../asset/js/search.js"></script>
+    <script src="../asset/js/library.js"></script>
   </body>
 </html>

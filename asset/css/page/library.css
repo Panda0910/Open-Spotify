@@ -1,0 +1,27 @@
+.library {
+  width: 100%;
+  height: 90vh;
+}
+
+.library-menu {
+  height: 10vh;
+  gap: 0.8rem;
+}
+
+.library-item {
+  cursor: pointer;
+  border-radius: 0.4rem;
+  padding: 0.8rem 1.6rem;
+  background-color: var(--bg-music-box);
+}
+
+.library-item.active,
+.library-item:hover {
+  background-color: var(--bg-light);
+}
+
+.library-content {
+  height: 80vh;
+  text-align: center;
+  padding: 10vw;
+}

@@ -67,3 +67,7 @@
   flex-direction: column;
   gap: 0.8rem;
 }
+
+.sidebar-footer a {
+  gap: 1.6rem;
+}
