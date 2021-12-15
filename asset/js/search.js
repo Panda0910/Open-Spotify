@@ -301,6 +301,7 @@ const searchContentList = document.querySelector(".search-content_list");
 searchContent.forEach((content) => {
   // create search box
   const searchBox = document.createElement("a");
+  searchBox.setAttribute("href", "./search-podcast.html");
   searchBox.classList.add("search-box");
   searchBox.style.backgroundColor = `${content.searchItemBg}`;
 
