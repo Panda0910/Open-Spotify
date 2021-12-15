@@ -43,6 +43,11 @@
     --fs-500: 1.8rem;
     --fs-600: 3.2rem;
     --fs-700: 4.8rem;
+  }
+}
+
+@media (min-width: 50em) {
+  :root {
     --fs-800: 9.6rem;
   }
 }

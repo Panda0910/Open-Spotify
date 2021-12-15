@@ -1,0 +1,52 @@
+.bg-favorite {
+  background: linear-gradient(
+    to bottom,
+    rgb(80, 56, 160) 0%,
+    rgba(0, 0, 0, 0.95) 100%
+  );
+}
+
+.favorite-intro {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.favorite-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 9rem;
+  height: 9rem;
+  background-color: rgb(80, 56, 160);
+  border-radius: 1rem;
+}
+
+@media (min-width: 50em) {
+  .favorite-icon {
+    width: 23.2rem;
+    height: 23.2rem;
+  }
+}
+
+.favorite-content {
+  height: 47.5vh;
+  padding: 4.8rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.favorite-content ion-icon {
+  margin-bottom: 2rem;
+}
+
+.favorite-content h4 {
+  margin-bottom: 0.8rem;
+}
+
+.favorite-content p {
+  margin-bottom: 3.2rem;
+}
