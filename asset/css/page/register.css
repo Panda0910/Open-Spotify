@@ -1,0 +1,122 @@
+.register {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.register-container {
+  width: 95%;
+  max-width: 45rem;
+}
+
+.register-header {
+  text-align: center;
+  padding: 1rem 0;
+  margin-bottom: 30px;
+}
+
+.register-social {
+  display: block;
+  margin: 2.4rem 0;
+}
+
+.register-subtitle {
+  font-size: var(--fs-400);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.1;
+  margin-bottom: 1.2rem;
+}
+
+.register-hr {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background-color: var(--grey);
+  margin: 1.6rem 0;
+}
+
+.register-hr span {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background-color: white;
+  position: absolute;
+  top: -1.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.register-group {
+  margin-bottom: 1.8rem;
+}
+
+.register-group a {
+  text-decoration: underline;
+  color: var(--green);
+}
+
+.register-group .flex {
+  gap: 1.6rem;
+  padding: 0.8rem 0;
+}
+
+.register-group .text-14-400 {
+  margin-bottom: 0.8rem;
+}
+
+.register-input {
+  display: block;
+  width: 100%;
+  border: thin solid var(--grey);
+  padding: 0.6rem 1.2rem;
+}
+
+.register-input + * {
+  margin-top: 0.6rem;
+}
+
+.register-date:nth-child(1),
+.register-date:nth-child(3) {
+  flex: 1;
+}
+
+.register-date:nth-child(2) {
+  flex: 2;
+}
+
+.register-date select {
+  display: block;
+  width: 100%;
+  padding: 0.95rem 1.2rem;
+  border: thin solid var(--grey);
+  outline: none;
+}
+
+.register-forgot {
+  display: inline-block;
+  text-decoration: underline;
+  margin-bottom: 3.2rem;
+}
+
+.register-forgot:hover {
+  color: var(--green);
+}
+
+.register-remember > * {
+  cursor: pointer;
+}
+
+.register-footer {
+  padding: 1.6rem 0;
+}
+
+.register-footer h4 {
+  margin-bottom: 1.8rem;
+  text-align: center;
+}
+
+.register-footer a {
+  text-decoration: underline;
+  color: var(--green);
+}

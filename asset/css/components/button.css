@@ -33,3 +33,69 @@
   font-size: var(--fs-600);
   color: var(--white);
 }
+
+.register-btn {
+  display: block;
+  padding: 1.4rem;
+  width: 100%;
+  color: var(--black-700);
+  text-transform: uppercase;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  border: thin solid;
+  border-radius: 100vw;
+  margin-bottom: 1.6rem;
+}
+
+.register-btn ion-icon {
+  font-size: var(--fs-500);
+  line-height: 1;
+}
+
+.register-btn span {
+  font-family: var(---ff-secondary);
+  font-size: var(--fs-400);
+  line-height: 1;
+  font-weight: 700;
+}
+
+.btn-facebook {
+  background-color: var(--facebook);
+  border-color: var(--facebook);
+  color: var(--white);
+}
+
+.btn-apple {
+  background-color: var(--black);
+  border-color: var(--black);
+  color: var(--white);
+}
+
+.btn-facebook:hover,
+.btn-apple:hover {
+  opacity: 0.9;
+}
+
+.btn-apple ion-icon,
+.btn-facebook ion-icon {
+  color: var(--white);
+}
+
+.btn-register-white:hover {
+  background-color: var(--bg-user-hover);
+  color: var(--white);
+}
+
+.btn-primary {
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: 100vw;
+}
+
+.btn-primary:hover {
+  transform: none;
+  opacity: 0.9;
+}
