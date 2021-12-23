@@ -120,3 +120,11 @@
   text-decoration: underline;
   color: var(--green);
 }
+
+.register-warm {
+  color: #f00;
+}
+
+.btn-register-white {
+  text-decoration: none !important;
+}
