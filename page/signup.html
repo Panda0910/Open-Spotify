@@ -45,6 +45,7 @@
               id="email"
               placeholder="Nhập email của bạn."
             />
+            <p class="register-warm text-16-400"></p>
             <a class="text-14-400" href="#!">Dùng số điện thoại</a>
           </div>
           <div class="register-group">
@@ -57,6 +58,7 @@
               id="reEmail"
               placeholder="Nhập lại email của bạn."
             />
+            <p class="register-warm text-16-400"></p>
           </div>
           <div class="register-group">
             <label class="text-16" for="password">Tạo mật khẩu</label>
@@ -66,6 +68,7 @@
               id="password"
               placeholder="Tạo mật khẩu"
             />
+            <p class="register-warm text-16-400"></p>
           </div>
           <div class="register-group">
             <label class="text-16" for="name"> Bạn tên là gì? </label>
@@ -75,6 +78,7 @@
               id="name"
               placeholder="Nhập tên hồ sơ."
             />
+            <p class="register-warm text-16-400"></p>
             <p class="text-14-400">Tên này sẽ xuất hiện trên hồ sơ của bạn</p>
           </div>
           <div class="register-group">
@@ -92,19 +96,19 @@
               <div class="register-date">
                 <label for="month">Tháng</label>
                 <select name="month" id="month">
-                  <option selected>Tháng</option>
-                  <option value="">Tháng 1</option>
-                  <option value="">Tháng 2</option>
-                  <option value="">Tháng 3</option>
-                  <option value="">Tháng 4</option>
-                  <option value="">Tháng 5</option>
-                  <option value="">Tháng 6</option>
-                  <option value="">Tháng 7</option>
-                  <option value="">Tháng 8</option>
-                  <option value="">Tháng 9</option>
-                  <option value="">Tháng 10</option>
-                  <option value="">Tháng 11</option>
-                  <option value="">Tháng 12</option>
+                  <option value="0" selected>Tháng</option>
+                  <option value="1">Tháng 1</option>
+                  <option value="2">Tháng 2</option>
+                  <option value="3">Tháng 3</option>
+                  <option value="4">Tháng 4</option>
+                  <option value="5">Tháng 5</option>
+                  <option value="6">Tháng 6</option>
+                  <option value="7">Tháng 7</option>
+                  <option value="8">Tháng 8</option>
+                  <option value="9">Tháng 9</option>
+                  <option value="10">Tháng 10</option>
+                  <option value="11">Tháng 11</option>
+                  <option value="12">Tháng 12</option>
                 </select>
               </div>
               <div class="register-date">
@@ -117,6 +121,9 @@
                 />
               </div>
             </div>
+            <p class="register-warm text-16-400" id="dayWarm"></p>
+            <p class="register-warm text-16-400" id="monthWarm"></p>
+            <p class="register-warm text-16-400" id="yearWarm"></p>
           </div>
           <div class="register-group">
             <label class="text-16" for="password">Giới tính của bạn là?</label>
