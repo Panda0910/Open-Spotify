@@ -109,12 +109,26 @@
               <label for="songGenre" class="form-label flex-shrink-0">
                 Song genre
               </label>
-              <input type="text" class="form-control" id="songGenre" />
+              <select
+                  class="form-select flex-grow-0"
+                  id="songGenre"
+                  aria-label="Default select example"
+              >
+              <option selected value="pop">Pop music</option>
+              <option value="hiphop">Hip hop music</option>
+              <option value="rock">Rock music</option>
+              <option value="soul">Soul music</option>
+              <option value="electronic">Electronic music</option>
+              <option value="blue">Blue music</option>
+              <option value="independent">Independent music</option>
+            </select>
+              
             </div>
             <button id="addSongBtn" class="btn btn-dark mt-3">New Songs</button>
           </form>
           <h1 class="primary-heading mb-4">Songs List</h1>
-          <table class="table table-dark table-striped table-bordered">
+          <table class="table table-dark table-striped table-bordered"
+          id="songTable">
             <thead>
               <tr>
                 <th>No</th>
@@ -134,28 +148,68 @@
           </table>
         </div>
       </section>
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Song Infomation
+              </h5>
+            </div>
+            <div class="modal-body">
+              <div class="input-group mb-3">
+                <label class="form-label" for="editSongname">Name</label>
+                <input type="text" class="form-control" id="editSongname" />
+              </div>
+              <div class="input-group mb-3">
+                <label class="form-label" for="editSongartist">Artist</label>
+                <input type="text" class="form-control" id="editSongartist" />
+              </div>
+              <div class="input-group mb-3">
+                <label class="form-label" for="editSonggenre">Genre</label>
+                <select
+                  class="form-select"
+                  id="editSonggenre"
+                  aria-label="Default select example"
+                >
+                  <option value="pop">Pop music</option>
+                  <option value="hiphop">Hip hop music</option>
+                  <option value="rock">Rock music</option>
+                  <option value="soul">Soul music</option>
+                  <option value="electronic">Electronic music</option>
+                  <option value="blue">Blue music</option>
+                  <option value="independent">Independent music</option>
+                </select>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-dismiss="modal"
+                id="editSongBtn"
+              >
+                Save
+              </button>
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-    <!-- <button class="btn btn-primary">
-      <ion-icon name="eye"></ion-icon>
-    </button> -->
-    <!-- icon -->
-
-    <!-- 
-        <tr>
-        <td>1</td>
-        <td>Beutiful In White</td>
-        <td>Shayne Ward</td>
-        <td>Pop</td>
-        <td>
-          <button class="btn btn-secondary">
-            <ion-icon name="create"></ion-icon>
-          </button>
-          <button class="btn btn-danger">
-            <ion-icon name="trash-bin"></ion-icon>
-          </button>
-        </td>
-      </tr>
-     -->
+   
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -170,6 +224,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/user.js"></script>
+    <script src="./js/song.js"></script>
   </body>
 </html>

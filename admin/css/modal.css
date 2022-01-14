@@ -1,0 +1,15 @@
+.modal .input-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal .input-group label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.modal .input-group input {
+  flex-grow: 0;
+  width: 80%;
+}

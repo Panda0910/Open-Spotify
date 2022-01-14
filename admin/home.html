@@ -131,7 +131,8 @@
             <button id="addUserBtn" class="btn btn-dark mt-3">New User</button>
           </form>
           <h1 class="primary-heading mb-4">Users List</h1>
-          <table class="table table-dark table-striped table-bordered">
+          <table class="table table-dark table-striped table-bordered"
+          id="userTable">
             <thead>
               <tr>
                 <th>No</th>
@@ -142,36 +143,78 @@
                 <th width="120">Handle</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td colspan="6">
-                  <p class="fs-4 mb-0 text-white">No user datas</p>
-                </td>
-              </tr>
-            </tbody>
+            <tbody></tbody>
           </table>
         </div>
       </section>
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                User Infomation
+              </h5>
+            </div>
+            <div class="modal-body">
+              <div class="input-group mb-3">
+                <label class="form-label" for="editUsername">Username</label>
+                <input type="text" class="form-control" id="editUsername" />
+              </div>
+              <div class="input-group mb-3">
+                <label class="form-label" for="editUseremail">Email</label>
+                <input type="text" class="form-control" id="editUseremail" />
+              </div>
+              <div class="input-group mb-3">
+                <label class="form-label" for="editUserpassword">
+                  Password
+                </label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="editUserpassword"
+                />
+              </div>
+              <div class="input-group mb-3">
+                <label class="form-label" for="editUserphone">Phone</label>
+                <input type="text" class="form-control" id="editUserphone" />
+              </div>
+              <div class="input-group">
+                <label class="form-label" for="editUsercountry">Country</label>
+                <input type="text" class="form-control" id="editUsercountry" />
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" id="showPassBtn">
+                Show password
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-dismiss="modal"
+                id="editUserBtn"
+              >
+                Save
+              </button>
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </main>
-    <!-- <button class="btn btn-primary">
-      <ion-icon name="eye"></ion-icon>
-    </button> -->
-    <!-- icon -->
-    <!-- <tr>
-      <td>1</td>
-      <td>Mark</td>
-      <td>mark@gmail.com</td>
-      <td>123456789</td>
-      <td>England</td>
-      <td>
-        <button class="btn btn-secondary">
-          <ion-icon name="create"></ion-icon>
-        </button>
-        <button class="btn btn-danger">
-          <ion-icon name="trash-bin"></ion-icon>
-        </button>
-      </td>
-    </tr> -->
+    
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
