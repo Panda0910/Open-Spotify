@@ -122,13 +122,7 @@ let songModalInfo = (index) => {
   editSongartist.value = artist;
   editSonggenre.value = genre;
 
-  // Lang nghe su kien
-  editSongBtn.addEventListener("click", function () {
-    // Cap nhat dl
-    editSong(index);
-    // Hien thi lai bang dl song
-    showSong();
-  });
+  editSongBtn.setAttribute("data-index", index);
 };
 
 // Goi ham
@@ -137,4 +131,11 @@ showSong();
 // Lang nghe su kien
 addSongBtn.addEventListener("click", (e) => {
   addSong(e);
+});
+
+editSongBtn.addEventListener("click", function () {
+  // Cap nhat dl
+  editSong(this.getAttribute("data-index"));
+  // Hien thi lai bang dl song
+  showSong();
 });

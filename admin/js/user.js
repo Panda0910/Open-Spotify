@@ -31,9 +31,10 @@ let showUser = () => {
 
   // Hien thi du lien ra bang
   if (userDataArr.length > 0) {
-    userDataArr.forEach(({ username, email, phone, country }, index) => {
-      let userTableTr = document.createElement("tr");
-      userTableTr.innerHTML = `
+    userDataArr.forEach(
+      ({ username, email, password, phone, country }, index) => {
+        let userTableTr = document.createElement("tr");
+        userTableTr.innerHTML = `
             <td>${index + 1}</td>
             <td>${username}</td>
             <td>${email}</td>
@@ -48,8 +49,9 @@ let showUser = () => {
                 </button>
             </td>
         `;
-      userTable.appendChild(userTableTr);
-    });
+        userTable.appendChild(userTableTr);
+      }
+    );
   } else {
     userTable.innerHTML = `
         <tr>
@@ -141,13 +143,7 @@ let userModalInfo = (index) => {
   editUserphone.value = phone;
   editUsercountry.value = country;
 
-  // Lang nghe su kien
-  editUserBtn.addEventListener("click", function () {
-    // Cap nhat dl
-    editUser(index);
-    // Hien thi lai bang dl user
-    showUser();
-  });
+  editUserBtn.setAttribute("data-index", index);
 };
 
 // Goi ham
@@ -163,4 +159,11 @@ showPassBtn.addEventListener("click", function () {
   let typeInput =
     editUserpassword.getAttribute("type") === "password" ? "text" : "password";
   editUserpassword.setAttribute("type", typeInput);
+});
+
+editUserBtn.addEventListener("click", function () {
+  // Cap nhat dl
+  editUser(this.getAttribute("data-index"));
+  // Hien thi lai bang dl user
+  showUser();
 });
